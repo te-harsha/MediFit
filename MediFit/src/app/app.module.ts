@@ -42,7 +42,7 @@ import { LoginComponent } from './login/login.component';
         },
         {
           id: FacebookLoginProvider.PROVIDER_ID,
-          provider: new FacebookLoginProvider('150773286996002')
+          provider: new FacebookLoginProvider('1891718880976100')
         }
       ]
     } as SocialAuthServiceConfig,
