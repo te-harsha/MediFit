@@ -1,0 +1,69 @@
+<section>
+    <div class="loginpage">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="form">
+              <div class="logo text-center">
+                <img src="../../assets/images/logo.png" alt="">
+              </div>
+  
+              <form action="">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your E-mail">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Your Password">
+                </div>
+                <hr class="hr-text" data-content="OR login Using Number">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Mobile Number">
+                </div>
+                <div class="form-group">
+                  <input type="checkbox"  >
+                  Keep me logged in
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-block" type="submit">SIGNUP <span class="float-right"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </span></button>
+                </div>
+  
+              </form>
+              <hr class="hr1">
+              <div class=" text-center">
+              <div>
+                <p>Already a member ? <a href="" style="color: red;">Signin</a></p>
+              </div>
+              <div class="sociallinks">
+                  
+                <img src="../../assets/images/google-logo.png" (click)="signInWithGoogle()" alt="" style="width:8%">
+  
+                <img src="../../assets/images/fb-logo.jpg" (click)="signInWithFB()" alt="" style="width:19%">
+                <img src="../../assets/images/insta icon.png" alt="" style="width:8%">
+              </div>
+            </div> 
+            </div>
+            </div>
+          <div class="col-md-7">
+            <div class="right-image">
+              <img src="../../assets/images/istockphoto-1210162966-170667a.jpg" alt=""  style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<div *ngIf="user">
+    <div>
+      <h4>{{ user.name }}</h4>
+      <p>{{ user.email }}</p>
+    </div>
+</div>
+
+<button *ngIf="user" class="btn btn-danger" (click)="signOut()">
+    logout
+</button>
